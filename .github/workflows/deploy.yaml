@@ -35,4 +35,5 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd ${{ secrets.SSH_FOLDER }}
-            npm install
+            cd /ms-hasian-betest && npm install
+            cd ../redis-hasian-betest && npm install
